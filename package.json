@@ -1,0 +1,35 @@
+{
+  "name": "xget",
+  "version": "1.0.0",
+  "description": "Xget",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "format": "prettier --write src/ test/ *.js *.json *.md",
+    "format:check": "prettier --check src/ test/ *.js *.json *.md",
+    "lint": "eslint src/ test/",
+    "lint:fix": "eslint src/ test/ --fix",
+    "start": "wrangler dev",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:run": "vitest run",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest --watch",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@rollup/rollup-win32-x64-msvc": "^4.50.0",
+    "express": "^5.1.0",
+    "xget": "file:"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.8.68",
+    "@cloudflare/workers-types": "^4.20250831.0",
+    "eslint": "^9.34.0",
+    "prettier": "^3.6.2",
+    "vitest": "^3.2.4",
+    "wrangler": "^4.33.1"
+  }
+}
