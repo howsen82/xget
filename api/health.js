@@ -37,3 +37,5 @@ export async function onRequest(context) {
     headers
   });
 }
+
+export default onRequest;

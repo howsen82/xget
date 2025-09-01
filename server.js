@@ -1,5 +1,5 @@
 import express from 'express';
-import handler from './api/[...path].js';
+import handler from './api/[[path]].js'
 import healthHandler from './api/health.js';
 
 const app = express();
